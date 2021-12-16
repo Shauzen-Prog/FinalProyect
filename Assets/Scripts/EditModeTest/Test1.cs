@@ -8,8 +8,7 @@ namespace EditModeTest
         [Test]
         public void Test1SimplePasses()
         {
-            Assert.AreEqual(2 + 2, 4);
-            
+            Assert.AreEqual(3 + 2, 5, $"Se esperaba que el numero sea igual");
         }
     }
 }

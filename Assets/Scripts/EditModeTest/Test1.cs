@@ -4,14 +4,11 @@ namespace EditModeTest
 {
     public class Test1
     {
-        // A Test behaves as an ordinary method
-        [Test]
-        public void Test1SimplePasses()
+        [TestCase(1,2, 3)]
+        [TestCase(3,5, 8)]
+        [TestCase(8,4, 12)]
+        public void WhenInsertTwoValues_ThenCalculateResult(int value1, int value2, int result)
         {
-            var value1 = 3;
-            var value2 = 2;
-            var result = 5;
-            
             Assert.AreEqual(value1 + value2, result, $"The expect number is {result} but is {value1 + value2}");
         }
     }

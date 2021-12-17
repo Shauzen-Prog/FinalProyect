@@ -12,7 +12,9 @@ namespace Tests
         [Test]
         public void Test2SimplePasses()
         {
-            // Use the Assert class to test conditions
+            var gameobject = new GameObject();
+            gameobject.AddComponent<Animation>();
+            
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
